@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 
 // Returns true when the media query matches. SSR-safe default = false.

@@ -28,9 +28,9 @@
   --hairline: rgba(255, 255, 255, 0.08);
   --hairline-gold: rgba(217, 185, 107, 0.22);
 
-  /* Fonts */
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Fonts (CSS variables injected by next/font in layout.jsx) */
+  --font-display: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
 
   /* Rhythm */
   --shell: min(1200px, 92vw);
@@ -45,8 +45,8 @@
 
 /* Hebrew swaps to Heebo for both display + body (Playfair has no Hebrew). */
 html[data-lang='he'] {
-  --font-display: 'Heebo', system-ui, sans-serif;
-  --font-body: 'Heebo', system-ui, sans-serif;
+  --font-display: var(--font-heebo), system-ui, sans-serif;
+  --font-body: var(--font-heebo), system-ui, sans-serif;
 }
 
 /* ---------- Reset / base ---------- */

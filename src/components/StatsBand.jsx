@@ -1,3 +1,5 @@
+'use client'
+
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { useLang } from '../context/LanguageContext.jsx'

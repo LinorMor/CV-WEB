@@ -1,3 +1,5 @@
+'use client'
+
 import { useLang } from '../context/LanguageContext.jsx'
 import { profile } from '../i18n/translations.js'
 import Reveal from './Reveal.jsx'

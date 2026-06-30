@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, useScroll, useSpring } from 'framer-motion'
 
 // Thin gold progress line fixed to the top of the viewport.

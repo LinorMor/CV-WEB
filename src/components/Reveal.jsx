@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, useReducedMotion } from 'framer-motion'
 
 // Generic scroll-in reveal. ease-out on enter; respects reduced motion.

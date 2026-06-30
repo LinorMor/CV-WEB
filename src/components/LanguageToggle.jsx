@@ -1,3 +1,5 @@
+'use client'
+
 import { useLang } from '../context/LanguageContext.jsx'
 import { Globe } from './icons.jsx'
 
