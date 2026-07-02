@@ -3,12 +3,17 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useMediaQuery } from '../hooks/useMediaQuery.js'
+import { useMounted } from '../hooks/useMounted.js'
 
 // One role on the centered timeline. Cards alternate sides around the
 // central axis; the node sits on the axis. On mobile everything collapses
 // to a single column with the axis on the inline-start edge.
 export default function TimelineItem({ item, index }) {
-  const prefersReduced = useReducedMotion()
+  // Client-only preferences are gated behind mount so the initial render
+  // matches the server (no hydration mismatch).
+  const reduce = useReducedMotion()
+  const mounted = useMounted()
+  const prefersReduced = reduce && mounted
   const isMobile = useMediaQuery('(max-width: 980px)')
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.25 })
 

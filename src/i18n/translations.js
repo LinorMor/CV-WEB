@@ -16,14 +16,14 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Product Manager · Ramat Gan, Israel',
+      eyebrow: 'Marketing Operations · Ramat Gan, Israel',
       name: 'Linor Mor',
       // Rotating role words (typed/animated)
-      roles: ['Product Manager', 'Marketing Operations', 'GTM Execution', 'Growth'],
+      roles: ['Marketing Operations', 'GTM Execution', 'Revenue Operations', 'Growth'],
       tagline:
-        'I turn products into stories that scale — 20x growth, GTM built from scratch, and the data to prove it.',
+        'I build the systems that make marketing scale — 20x growth, GTM from scratch, and the data to prove it.',
       openTo: 'Open to',
-      openRoles: ['Project Management', 'Marketing Operations', 'Sales & Marketing'],
+      openRoles: ['Marketing Operations', 'Project Management', 'Sales & Marketing'],
       ctaContact: "Let's talk",
       ctaResume: 'Download résumé',
       scroll: 'Scroll',
@@ -31,7 +31,7 @@ export const translations = {
 
     about: {
       label: 'Who I am',
-      title: "I didn't stumble into product. I planned for it.",
+      title: "I didn't stumble into marketing operations. I planned for it.",
       body: [
         'I chose Industrial Engineering & Management at Shenkar because the best PMMs in SaaS speak two languages — the engineer’s and the customer’s. That degree gave me the technical literacy to earn a seat at the table.',
         'What followed: 20x user growth as PM at Buyverse, GTM infrastructure built from scratch for 8+ businesses at Talia Chriqui Consulting, and consumer-insight rigor at Kantar — the world’s leading market research firm.',
@@ -222,13 +222,13 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Product Manager · רמת גן, ישראל',
+      eyebrow: 'Marketing Operations · רמת גן, ישראל',
       name: 'לינור מור',
-      roles: ['ניהול מוצר', 'תפעול שיווק', 'GTM', 'צמיחה'],
+      roles: ['תפעול שיווק', 'GTM', 'תפעול הכנסה', 'צמיחה'],
       tagline:
-        'אני הופכת מוצרים לסיפור שמתרחב — צמיחה פי 20, GTM שנבנה מאפס, והדאטה שמוכיחה את זה.',
+        'אני בונה את המערכות שמאפשרות לשיווק לגדול — צמיחה פי 20, GTM שנבנה מאפס, והדאטה שמוכיחה את זה.',
       openTo: 'פתוחה ל',
-      openRoles: ['ניהול פרויקטים', 'תפעול שיווק', 'מכירות ושיווק'],
+      openRoles: ['תפעול שיווק', 'ניהול פרויקטים', 'מכירות ושיווק'],
       ctaContact: 'בואו נדבר',
       ctaResume: 'הורדת קורות חיים',
       scroll: 'גלילה',
@@ -236,7 +236,7 @@ export const translations = {
 
     about: {
       label: 'מי אני',
-      title: 'לא נקלעתי לעולם המוצר. תכננתי אותו.',
+      title: 'לא נקלעתי לתפעול השיווק. תכננתי אותו.',
       body: [
         'בחרתי בהנדסת תעשייה וניהול בשנקר כי ה‑PMMs הטובים ביותר ב‑SaaS דוברים שתי שפות — של המהנדס ושל הלקוח. התואר נתן לי את האוריינות הטכנית לקבל מקום סביב השולחן.',
         'מה שבא אחר כך: צמיחה פי 20 כ‑PM ב‑Buyverse, תשתית GTM שנבנתה מאפס ל‑8+ עסקים ב‑Talia Chriqui, וניסיון מחקר צרכני מעמיק ב‑Kantar — חברת מחקר השוק המובילה בעולם.',
@@ -417,8 +417,9 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/linormor',
   linkedinHandle: 'linkedin.com/in/linormor',
   location: 'Ramat Gan, Israel',
-  // Real photo lives at public/linor.jpg (black-suit portrait).
-  // Falls back to the placeholder if the file is missing.
+  // Hero uses the background-removed cutout (floats on the dark bg).
+  photoCutout: '/linor-cutout.webp',
+  // Original framed photo kept as a fallback / for other uses.
   photo: '/linor.jpg',
   photoFallback: '/portrait.svg',
   resumeEn: '/cv-en.pdf',

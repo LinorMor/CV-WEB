@@ -355,9 +355,9 @@ html[dir='rtl'] .scroll-progress {
   position: relative;
   min-height: 100svh;
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
   overflow: hidden;
-  padding-block: 96px 80px;
 }
 .hero-bg {
   position: absolute;
@@ -395,14 +395,62 @@ html[dir='rtl'] .scroll-progress {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-.hero-inner {
+/* Two-column stage: text on one side, cutout on the other (unobscured). */
+.hero-stage {
   position: relative;
   z-index: 1;
+  width: var(--shell);
+  min-height: 100svh;
   display: grid;
-  grid-template-columns: 1.25fr 0.85fr;
+  grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
-  gap: clamp(32px, 6vw, 80px);
+  gap: clamp(20px, 4vw, 56px);
+  padding-block: clamp(88px, 12vh, 124px) clamp(40px, 8vh, 72px);
 }
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+.hero-logo {
+  margin-bottom: 20px;
+}
+
+/* Cutout — full and unobscured on its side, floats on the dark. */
+.hero-photo {
+  position: relative;
+  z-index: 1;
+  justify-self: center;
+  align-self: end;
+  height: min(80svh, 740px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+.hero-photo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
+  -webkit-mask-image: linear-gradient(to bottom, #000 84%, transparent 99%);
+  mask-image: linear-gradient(to bottom, #000 84%, transparent 99%);
+}
+.hero-photo-glow {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  height: 66%;
+  background: radial-gradient(closest-side, rgba(217, 185, 107, 0.22), transparent 72%);
+  filter: blur(14px);
+}
+
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -519,37 +567,6 @@ html[dir='rtl'] .scroll-progress {
   flex-wrap: wrap;
   gap: 14px;
   align-items: center;
-}
-
-/* Portrait */
-.hero-portrait {
-  display: flex;
-  justify-content: center;
-}
-.portrait-frame {
-  position: relative;
-  width: min(100%, 400px);
-  aspect-ratio: 4 / 5;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid var(--hairline-gold);
-  box-shadow: 0 40px 90px -40px rgba(0, 0, 0, 0.8),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-.portrait-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Keep the face high in the frame for a standing portrait. */
-  object-position: 50% 12%;
-  filter: saturate(1.02) contrast(1.02);
-}
-.portrait-ring {
-  position: absolute;
-  inset: 0;
-  border-radius: 24px;
-  background: linear-gradient(160deg, rgba(217, 185, 107, 0.16), transparent 40%);
-  pointer-events: none;
 }
 
 .hero-scroll {
@@ -1027,16 +1044,22 @@ a.contact-meta-item:hover {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .hero-inner {
+  /* Hero stacks: text on top, photo below — full and unobscured. */
+  .hero-stage {
     grid-template-columns: 1fr;
-    text-align: start;
+    justify-items: center;
+    align-content: center;
+    gap: clamp(16px, 4vh, 32px);
+    padding-block: clamp(96px, 14vh, 130px) 0;
   }
-  .hero-portrait {
-    order: -1;
-    justify-content: flex-start;
+  .hero-copy {
+    align-items: center;
+    text-align: center;
+    max-width: 620px;
   }
-  .portrait-frame {
-    width: min(72%, 320px);
+  .hero-photo {
+    height: min(58svh, 560px);
+    align-self: center;
   }
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);

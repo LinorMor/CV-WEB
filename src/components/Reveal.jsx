@@ -1,6 +1,7 @@
 'use client'
 
 import { motion, useReducedMotion } from 'framer-motion'
+import { useMounted } from '../hooks/useMounted.js'
 
 // Generic scroll-in reveal. ease-out on enter; respects reduced motion.
 export default function Reveal({
@@ -13,7 +14,11 @@ export default function Reveal({
   className,
   ...rest
 }) {
-  const prefersReduced = useReducedMotion()
+  // Gate the reduced-motion branch behind mount so SSR and first client
+  // render match (avoids hydration mismatch when the user prefers reduced motion).
+  const reduce = useReducedMotion()
+  const mounted = useMounted()
+  const prefersReduced = reduce && mounted
   const MotionTag = motion[as] || motion.div
 
   if (prefersReduced) {

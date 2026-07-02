@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { useLang } from '../context/LanguageContext.jsx'
 import { profile } from '../i18n/translations.js'
+import Logo from './Logo.jsx'
 import ResumeMenu from './ResumeMenu.jsx'
 import { ArrowDown, ArrowRight, MapPin } from './icons.jsx'
 
@@ -38,17 +39,18 @@ export default function Hero() {
   const prefersReduced = useReducedMotion()
   const { scrollY } = useScroll()
 
-  // Subtle parallax on the portrait + headline.
-  const yPhoto = useTransform(scrollY, [0, 600], [0, prefersReduced ? 0 : 80])
-  const yText = useTransform(scrollY, [0, 600], [0, prefersReduced ? 0 : -40])
-  const opacity = useTransform(scrollY, [0, 480], [1, 0])
+  // Parallax: photo drifts up/back, copy holds — a gentle front/back play.
+  const yPhoto = useTransform(scrollY, [0, 700], [0, prefersReduced ? 0 : -70])
+  const scalePhoto = useTransform(scrollY, [0, 700], [1, prefersReduced ? 1 : 1.05])
+  const yCopy = useTransform(scrollY, [0, 700], [0, prefersReduced ? 0 : 40])
+  const fade = useTransform(scrollY, [0, 520], [1, 0])
 
   const container = {
     hidden: {},
-    show: { transition: { staggerChildren: 0.09, delayChildren: 0.2 } },
+    show: { transition: { staggerChildren: 0.09, delayChildren: 0.15 } },
   }
   const item = {
-    hidden: { opacity: 0, y: 24 },
+    hidden: { opacity: 0, y: 22 },
     show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
   }
 
@@ -59,14 +61,18 @@ export default function Hero() {
         <div className="hero-grain" />
       </div>
 
-      <div className="hero-inner section-shell">
+      <div className="hero-stage">
         <motion.div
-          className="hero-content"
-          style={{ y: yText }}
+          className="hero-copy"
+          style={{ y: yCopy }}
           variants={container}
           initial="hidden"
           animate="show"
         >
+          <motion.div variants={item} className="hero-logo">
+            <Logo size={54} />
+          </motion.div>
+
           <motion.p className="hero-eyebrow" variants={item}>
             <MapPin width={15} height={15} />
             {t.hero.eyebrow}
@@ -93,7 +99,9 @@ export default function Hero() {
               {t.hero.openRoles.map((r, idx) => (
                 <span key={r} className="hero-chip">
                   {r}
-                  {idx < t.hero.openRoles.length - 1 && <span className="chip-dot" aria-hidden="true">·</span>}
+                  {idx < t.hero.openRoles.length - 1 && (
+                    <span className="chip-dot" aria-hidden="true">·</span>
+                  )}
                 </span>
               ))}
             </span>
@@ -108,26 +116,20 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        <motion.div className="hero-portrait" style={{ y: yPhoto }} variants={item} initial="hidden" animate="show">
-          <div className="portrait-frame">
-            <img
-              src={profile.photo}
-              alt="Linor Mor"
-              loading="eager"
-              width="440"
-              height="540"
-              onError={(e) => {
-                if (profile.photoFallback && e.currentTarget.src !== window.location.origin + profile.photoFallback) {
-                  e.currentTarget.src = profile.photoFallback
-                }
-              }}
-            />
-            <div className="portrait-ring" aria-hidden="true" />
-          </div>
+        {/* Cutout to the side — full and unobscured, floating on the dark. */}
+        <motion.div
+          className="hero-photo"
+          style={{ y: yPhoto, scale: scalePhoto }}
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+        >
+          <div className="hero-photo-glow" aria-hidden="true" />
+          <img src={profile.photoCutout} alt="Linor Mor" width="900" height="1695" loading="eager" />
         </motion.div>
       </div>
 
-      <motion.a href="#about" className="hero-scroll" style={{ opacity }} aria-label={t.hero.scroll}>
+      <motion.a href="#about" className="hero-scroll" style={{ opacity: fade }} aria-label={t.hero.scroll}>
         <span>{t.hero.scroll}</span>
         <motion.span
           className="hero-scroll-icon"

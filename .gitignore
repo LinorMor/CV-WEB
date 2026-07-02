@@ -17,7 +17,8 @@ build
 __pycache__
 *.pyc
 
-# Large source photos (kept locally, optimized copy lives in public/linor.jpg)
+# Large / unrelated source images (kept locally, optimized copies live in public/)
 /2Q2A0832.jpg
 /2Q2A0926.jpg
 /אני.png
+/בוקר*.jpg
