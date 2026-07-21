@@ -24,15 +24,15 @@ const heebo = Heebo({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://linor-mor-cv.vercel.app'),
-  title: 'Linor Mor — Product Manager',
+  metadataBase: new URL('https://cv-web-black.vercel.app'),
+  title: 'Linor Mor — Project Management & PMO',
   description:
-    'Linor Mor — Product Manager. 20x growth, GTM execution & marketing operations. Open to Project Management, Marketing Operations and Sales & Marketing roles.',
+    'Linor Mor — Project management & control on an Industrial Engineering backbone. 20x growth, KPI dashboards, Excel & Jira. Open to PMO and project-management roles.',
   icons: { icon: '/favicon.svg' },
   openGraph: {
-    title: 'Linor Mor — Product Manager',
+    title: 'Linor Mor — Project Management & PMO',
     description:
-      '20x growth · GTM execution · Marketing Operations. Open to Project Management, Marketing Operations and Sales & Marketing roles.',
+      'Project management & control · KPIs · Excel & Jira · Industrial Engineering. Open to PMO and project-management roles.',
     type: 'website',
   },
 }
