@@ -169,12 +169,7 @@ export const translations = {
         {
           school: 'Shenkar — Engineering. Design. Art.',
           degree: 'B.Sc. Industrial & Management Engineering',
-          year: '2022',
-        },
-        {
-          school: 'Sapir College',
-          degree: 'Management & Industrial Engineering',
-          year: '2020 — 2021',
+          year: '2026',
         },
         {
           school: 'Mekif Vav High School',
@@ -371,12 +366,7 @@ export const translations = {
         {
           school: 'שנקר — הנדסה. עיצוב. אמנות.',
           degree: 'B.Sc. הנדסת תעשייה וניהול',
-          year: '2022',
-        },
-        {
-          school: 'המכללה האקדמית ספיר',
-          degree: 'ניהול והנדסת תעשייה',
-          year: '2020 — 2021',
+          year: '2026',
         },
         {
           school: 'תיכון מקיף ו׳',
