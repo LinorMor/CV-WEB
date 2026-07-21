@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
+import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { useLang } from '../context/LanguageContext.jsx'
 import { profile } from '../i18n/translations.js'
 import Logo from './Logo.jsx'
@@ -21,15 +21,16 @@ function RotatingRole({ roles }) {
 
   return (
     <span className="hero-role-rotator" aria-live="polite">
-      <motion.span
-        key={roles[i]}
-        initial={{ opacity: 0, y: 14 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -14 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-      >
-        {roles[i]}
-      </motion.span>
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.span
+          key={roles[i]}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.42, ease: [0.22, 1, 0.36, 1] } }}
+          exit={{ opacity: 0, y: -10, transition: { duration: 0.24, ease: [0.4, 0, 1, 1] } }}
+        >
+          {roles[i]}
+        </motion.span>
+      </AnimatePresence>
     </span>
   )
 }

@@ -181,7 +181,7 @@ export const translations = {
 
     contact: {
       label: 'Let’s build something',
-      title: 'Looking for a sharp PM / Marketing Ops mind?',
+      title: 'Looking for someone who makes marketing actually run?',
       body:
         'I’m open to roles in project management, marketing operations and sales & marketing across Israeli tech. The fastest way to reach me is below.',
       emailCta: 'Email me',
@@ -378,7 +378,7 @@ export const translations = {
 
     contact: {
       label: 'בואו נבנה משהו',
-      title: 'מחפשים ראש חד ל‑PM / תפעול שיווק?',
+      title: 'מחפשים מישהי שגורמת לשיווק פשוט לעבוד?',
       body:
         'אני פתוחה לתפקידים בניהול פרויקטים, תפעול שיווק ומכירות ושיווק בהייטק הישראלי. הדרך המהירה ביותר להגיע אליי — למטה.',
       emailCta: 'שלחו מייל',
