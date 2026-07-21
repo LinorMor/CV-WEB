@@ -436,8 +436,8 @@ html[dir='rtl'] .scroll-progress {
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
-  -webkit-mask-image: linear-gradient(to bottom, #000 84%, transparent 99%);
-  mask-image: linear-gradient(to bottom, #000 84%, transparent 99%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 74%, transparent 98%);
+  mask-image: linear-gradient(to bottom, #000 74%, transparent 98%);
 }
 .hero-photo-glow {
   position: absolute;
@@ -1057,9 +1057,17 @@ a.contact-meta-item:hover {
     text-align: center;
     max-width: 620px;
   }
+  /* Size by width on mobile so the figure is a consistent, prominent size. */
   .hero-photo {
-    height: min(58svh, 560px);
+    height: auto;
+    width: min(78%, 320px);
     align-self: center;
+  }
+  .hero-photo img {
+    width: 100%;
+    height: auto;
+    -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
   }
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1069,14 +1077,21 @@ a.contact-meta-item:hover {
     display: none;
   }
 
-  /* Timeline collapses to a single column with the axis on the start edge. */
+  /* Timeline: single column with a clean left rail; cards offset as
+     distinct boxes, node dots aligned to each card's top. */
+  .timeline {
+    padding-inline-start: 4px;
+  }
   .timeline-track {
-    inset-inline-start: 9px;
+    inset-inline-start: 11px;
     transform: none;
   }
   html[dir='rtl'] .timeline-track {
     inset-inline-start: auto;
-    inset-inline-end: 9px;
+    inset-inline-end: 11px;
+  }
+  .timeline-list {
+    gap: clamp(22px, 4vh, 36px);
   }
   .timeline-item {
     grid-template-columns: 1fr;
@@ -1084,19 +1099,19 @@ a.contact-meta-item:hover {
   .timeline-left .timeline-card,
   .timeline-right .timeline-card {
     grid-column: 1;
-    padding-inline-start: clamp(34px, 9vw, 52px);
+    margin-inline-start: 34px;
   }
   .timeline-node-wrap {
     position: absolute;
-    inset-inline-start: 9px;
+    inset-inline-start: 11px;
     inset-block-start: 0;
     transform: translateX(-50%);
-    padding-block-start: 22px;
+    padding-block-start: 26px;
     grid-column: 1;
   }
   html[dir='rtl'] .timeline-node-wrap {
     inset-inline-start: auto;
-    inset-inline-end: 9px;
+    inset-inline-end: 11px;
     transform: translateX(50%);
   }
 }
