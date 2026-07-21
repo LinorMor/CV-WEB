@@ -16,14 +16,14 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Marketing Operations · Ramat Gan, Israel',
+      eyebrow: 'Project Management · PMO · Ramat Gan, Israel',
       name: 'Linor Mor',
       // Rotating role words (typed/animated)
-      roles: ['Marketing Operations', 'GTM Execution', 'Revenue Operations', 'Growth'],
+      roles: ['Project Management', 'PMO', 'Project Control', 'Operations'],
       tagline:
-        'I build the systems that make marketing scale — 20x growth, GTM from scratch, and the data to prove it.',
+        'I keep complex projects on track — control, KPIs and stakeholder alignment, on an Industrial Engineering backbone.',
       openTo: 'Open to',
-      openRoles: ['Marketing Operations', 'Project Management', 'Sales & Marketing'],
+      openRoles: ['PMO', 'Project Management', 'Project Control'],
       ctaContact: "Let's talk",
       ctaResume: 'Download résumé',
       scroll: 'Scroll',
@@ -31,21 +31,21 @@ export const translations = {
 
     about: {
       label: 'Who I am',
-      title: "I didn't stumble into marketing operations. I planned for it.",
+      title: "I didn't stumble into project management. I planned for it.",
       body: [
-        'I chose Industrial Engineering & Management at Shenkar because the best PMMs in SaaS speak two languages — the engineer’s and the customer’s. That degree gave me the technical literacy to earn a seat at the table.',
-        'What followed: 20x user growth as PM at Buyverse, GTM infrastructure built from scratch for 8+ businesses at Talia Chriqui Consulting, and consumer-insight rigor at Kantar — the world’s leading market research firm.',
-        'I’m looking for a role in project management, marketing operations, or sales & marketing inside Israeli tech. If you’re building a product that deserves a better story — let’s talk.',
+        'I chose Industrial Engineering & Management at Shenkar because it is the discipline of running things well — process, data, and keeping many moving parts aligned. That degree is the backbone of how I manage and control projects.',
+        'As PM at Buyverse I owned the roadmap and sprints in Jira, built the executive KPI dashboards, and mapped the funnel end to end — 20x growth with the reporting to prove it. At Talia Chriqui I ran delivery programs for 8+ businesses: real-time dashboards, process optimisation, and change management with full stakeholder adoption in weeks.',
+        'I’m looking for a PMO / project-management role where control, clear reporting and stakeholder alignment actually move delivery forward. I like the hard, hands-on work and the chance to learn fast. If that’s the seat you’re filling — let’s talk.',
       ],
     },
 
     stats: {
       label: 'Impact in numbers',
       items: [
-        { value: 20, prefix: '', suffix: 'x', label: 'User growth at Buyverse' },
+        { value: 20, prefix: '', suffix: 'x', label: 'Growth delivered at Buyverse' },
         { value: 32, prefix: '+', suffix: '%', label: 'Activation rate uplift' },
-        { value: 35, prefix: '+', suffix: '%', label: 'Lead-to-customer conversion' },
-        { value: 8, prefix: '', suffix: '+', label: 'Businesses GTM-enabled' },
+        { value: 35, prefix: '+', suffix: '%', label: 'Conversion improvement' },
+        { value: 8, prefix: '', suffix: '+', label: 'Businesses’ programs run' },
         { value: 7, prefix: '', suffix: 'h', label: 'Saved per client / week' },
       ],
     },
@@ -62,32 +62,32 @@ export const translations = {
           acquired: 'Acquired by Keyz',
           role: 'Product Manager',
           summary:
-            'AI-powered marketplace reinventing how Israel buys and sells. Joined as the company’s first PM — owning product strategy, growth and acquisition through to exit.',
+            'AI-powered marketplace reinventing how Israel buys and sells. Joined as the company’s first PM — owning roadmap, delivery and growth through to exit.',
           bullets: [
-            'Scaled platform traffic from 100 to 2,000 monthly users (20x) via funnel optimisation, UX iteration and targeted campaigns (Google Analytics, LogRocket).',
-            'Built the acquisition-ready KPI framework & executive dashboard — growth, activation, retention, listing conversion — in Looker Studio and HubSpot.',
-            'Mapped the full funnel; fixed 3 critical drop-off points and lifted activation rate by 32%.',
+            'Owned the product roadmap and sprint cycles in Jira, aligning dev, design and marketing around clear delivery milestones.',
+            'Built the acquisition-ready KPI framework & executive dashboard — growth, activation, retention, conversion — in Looker Studio for leadership visibility.',
+            'Mapped the full funnel end to end; identified 3 critical drop-off points and drove fixes that lifted activation by 32%.',
+            'Scaled platform traffic from 100 to 2,000 monthly users (20x) through tracked, data-driven iteration (Google Analytics, LogRocket).',
             'Prepared the data-driven insights deck that supported the company’s due-diligence and acquisition.',
-            'Ran product roadmap & sprints in Jira, aligning dev, design and marketing around growth milestones.',
           ],
-          tags: ['Product Strategy', 'Growth', 'Looker Studio', 'HubSpot', 'Jira'],
+          tags: ['Roadmap', 'Jira', 'KPIs', 'Looker Studio', 'Reporting'],
         },
         {
           id: 'talia',
           period: '2024 — 2025',
           company: 'Talia Chriqui Consulting',
           acquired: '',
-          role: 'Marketing & Operations Program Manager',
+          role: 'Operations & Program Manager',
           summary:
-            'Boutique consulting firm delivering marketing & operational transformation for small businesses. Built go-to-market infrastructure from scratch.',
+            'Boutique consulting firm delivering operational transformation for small businesses. Ran delivery programs end to end, from scoping to adoption.',
           bullets: [
-            'Rebuilt marketing & sales funnels for 8+ SMB clients; improved average lead-to-customer conversion by 35% (HubSpot, Google Analytics).',
-            'Designed real-time KPI dashboards in Looker Studio — moving clients from gut-based to data-driven decisions.',
-            'Automated operational workflows with Monday.com & Zapier, saving an average of 7 hours/week per client.',
-            'Built ICP profiles and customer journeys, translating findings into GTM positioning.',
-            'Led change management & stakeholder alignment — full team adoption within 3–4 weeks, without direct authority.',
+            'Ran delivery programs for 8+ SMB clients — scoping, milestones and stakeholder alignment from kickoff through to adoption.',
+            'Designed real-time KPI dashboards in Looker Studio, moving teams from gut-based to data-driven decisions.',
+            'Streamlined operational workflows and processes, saving an average of 7 hours/week per client.',
+            'Led change management for every rollout — full team adoption within 3–4 weeks, without direct authority.',
+            'Rebuilt and tracked every stage of the funnel, improving lead-to-customer conversion by 35%.',
           ],
-          tags: ['Marketing Ops', 'GTM', 'Automation', 'Monday.com', 'Zapier'],
+          tags: ['Program Management', 'Stakeholders', 'Process', 'Dashboards', 'Change Mgmt'],
         },
         {
           id: 'hitech',
@@ -103,7 +103,7 @@ export const translations = {
             'Hit monthly lead-generation targets through personalised outreach campaigns.',
             'Translated complex insurance products into clear value propositions for a tech-savvy audience.',
           ],
-          tags: ['Business Development', 'CRM', 'Lead Generation'],
+          tags: ['Pipeline Tracking', 'CRM', 'Coordination'],
         },
         {
           id: 'kantar',
@@ -118,7 +118,7 @@ export const translations = {
             'Supervised staff, monitored progress and set project goals.',
             'Analysed data and translated findings into actionable insight.',
           ],
-          tags: ['Market Research', 'Consumer Insights', 'Data Analysis'],
+          tags: ['Project Coordination', 'Data Analysis', 'Reporting'],
         },
         {
           id: 'idf',
@@ -134,7 +134,7 @@ export const translations = {
             'Built a VBA program to streamline the HR recruitment process.',
             'Presented monthly progress reports to C-level command.',
           ],
-          tags: ['Operations', 'People Management', 'Excel / VBA'],
+          tags: ['Operations', 'Excel / VBA', 'Reporting'],
         },
       ],
     },
@@ -144,20 +144,20 @@ export const translations = {
       title: 'Tools & disciplines I work in',
       groups: [
         {
-          name: 'Product & Growth',
-          items: ['Go-to-Market Strategy', 'Product Strategy', 'Funnel Optimisation', 'A/B Iteration', 'Roadmapping'],
+          name: 'Project Management & Control',
+          items: ['Roadmapping', 'Sprint Management', 'Milestone & Risk Tracking', 'Stakeholder Alignment', 'Change Management'],
         },
         {
-          name: 'Marketing Operations',
-          items: ['HubSpot', 'Marketing Automation', 'Lifecycle & CRM', 'ICP & Positioning'],
+          name: 'Reporting & Analytics',
+          items: ['Excel (advanced)', 'KPI Dashboards', 'Looker Studio', 'Google Analytics', 'Data Analysis'],
         },
         {
-          name: 'Analytics & Data',
-          items: ['Google Analytics', 'Mixpanel', 'Looker Studio', 'LogRocket', 'Excel / VBA'],
+          name: 'Tools',
+          items: ['Jira', 'Monday.com', 'Microsoft Office', 'LogRocket'],
         },
         {
-          name: 'Workflow & Delivery',
-          items: ['Jira', 'Monday.com', 'Zapier', 'Sprint Management'],
+          name: 'Foundations',
+          items: ['Industrial Engineering', 'Process Optimisation', 'Operations', 'VBA'],
         },
       ],
     },
@@ -181,9 +181,9 @@ export const translations = {
 
     contact: {
       label: 'Let’s build something',
-      title: 'Looking for someone who makes marketing actually run?',
+      title: 'Looking for a PMO who keeps projects on track?',
       body:
-        'I’m open to roles in project management, marketing operations and sales & marketing across Israeli tech. The fastest way to reach me is below.',
+        'I’m open to PMO, project-management and project-control roles across Israeli tech. Industrial-Engineering backbone, data-driven, precise — and I like the hard, hands-on work. The fastest way to reach me is below.',
       emailCta: 'Email me',
       linkedinCta: 'LinkedIn',
       resumeCta: 'Download résumé',
@@ -217,13 +217,13 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Marketing Operations · רמת גן, ישראל',
+      eyebrow: 'ניהול פרויקטים · PMO · רמת גן, ישראל',
       name: 'לינור מור',
-      roles: ['תפעול שיווק', 'GTM', 'תפעול הכנסה', 'צמיחה'],
+      roles: ['ניהול פרויקטים', 'PMO', 'בקרת פרויקטים', 'תפעול'],
       tagline:
-        'אני בונה את המערכות שמאפשרות לשיווק לגדול — צמיחה פי 20, GTM שנבנה מאפס, והדאטה שמוכיחה את זה.',
+        'אני שומרת על פרויקטים מורכבים במסלול — בקרה, KPIs ויישור מחזיקי עניין, על בסיס תואר בהנדסת תעשייה וניהול.',
       openTo: 'פתוחה ל',
-      openRoles: ['תפעול שיווק', 'ניהול פרויקטים', 'מכירות ושיווק'],
+      openRoles: ['PMO', 'ניהול פרויקטים', 'בקרת פרויקטים'],
       ctaContact: 'בואו נדבר',
       ctaResume: 'הורדת קורות חיים',
       scroll: 'גלילה',
@@ -231,21 +231,21 @@ export const translations = {
 
     about: {
       label: 'מי אני',
-      title: 'לא נקלעתי לתפעול השיווק. תכננתי אותו.',
+      title: 'לא נקלעתי לניהול פרויקטים. תכננתי אותו.',
       body: [
-        'בחרתי בהנדסת תעשייה וניהול בשנקר כי ה‑PMMs הטובים ביותר ב‑SaaS דוברים שתי שפות — של המהנדס ושל הלקוח. התואר נתן לי את האוריינות הטכנית לקבל מקום סביב השולחן.',
-        'מה שבא אחר כך: צמיחה פי 20 כ‑PM ב‑Buyverse, תשתית GTM שנבנתה מאפס ל‑8+ עסקים ב‑Talia Chriqui, וניסיון מחקר צרכני מעמיק ב‑Kantar — חברת מחקר השוק המובילה בעולם.',
-        'אני מחפשת תפקיד בניהול פרויקטים, תפעול שיווק או מכירות ושיווק בהייטק הישראלי. אם אתם בונים מוצר שמגיע לו סיפור טוב יותר — בואו נדבר.',
+        'בחרתי בהנדסת תעשייה וניהול בשנקר כי זו התורה של לנהל דברים נכון — תהליך, דאטה, והמשמעת לשמור על הרבה חלקים נעים מיושרים. התואר הוא הבסיס לאיך שאני מנהלת ובוקרת פרויקטים.',
+        'כ‑PM ב‑Buyverse ניהלתי את ה‑Roadmap והספרינטים ב‑Jira, בניתי את דאשבורדי ה‑KPI להנהלה ומיפיתי את הפאנל מקצה לקצה — צמיחה פי 20 עם הדיווח שמוכיח אותה. ב‑Talia Chriqui ניהלתי תוכניות לׂ‑8+ עסקים: דאשבורדים בזמן אמת, ייעול תהליכים, וניהול שינוי עם אימוץ מלא תוך שבועות.',
+        'אני מחפשת תפקיד PMO / ניהול פרויקטים שבו בקרה, דיווח ברור ויישור מחזיקי עניין באמת מקדמים את ה‑Delivery. אני אוהבת את העבודה הקשה והמעשית ואת ההזדמנות ללמוד מהר. אם זה התפקיד שאתם מאיישים — בואו נדבר.',
       ],
     },
 
     stats: {
       label: 'ההשפעה במספרים',
       items: [
-        { value: 20, prefix: '', suffix: 'x', label: 'צמיחת משתמשים ב‑Buyverse' },
+        { value: 20, prefix: '', suffix: 'x', label: 'צמיחה שהובלתי ב‑Buyverse' },
         { value: 32, prefix: '+', suffix: '%', label: 'שיפור ב‑Activation' },
-        { value: 35, prefix: '+', suffix: '%', label: 'המרת ליד ללקוח' },
-        { value: 8, prefix: '', suffix: '+', label: 'עסקים עם GTM' },
+        { value: 35, prefix: '+', suffix: '%', label: 'שיפור בהמרה' },
+        { value: 8, prefix: '', suffix: '+', label: 'תוכניות לעסקים שניהלתי' },
         { value: 7, prefix: '', suffix: ' ש׳', label: 'חיסכון ללקוח / שבוע' },
       ],
     },
@@ -262,32 +262,32 @@ export const translations = {
           acquired: 'נרכשה ע״י Keyz',
           role: 'Product Manager',
           summary:
-            'מרקטפלייס מבוסס‑AI שמשנה את הדרך שבה ישראל קונה ומוכרת. הצטרפתי כ‑PM הראשונה בחברה — אחראית על אסטרטגיית מוצר, צמיחה ואקוויזישן עד לאקזיט.',
+            'מרקטפלייס מבוסס‑AI שמשנה את הדרך שבה ישראל קונה ומוכרת. הצטרפתי כ‑PM הראשונה בחברה — אחראית על Roadmap, Delivery וצמיחה עד לאקזיט.',
           bullets: [
-            'הגדלתי את תנועת הפלטפורמה מ‑100 ל‑2,000 משתמשים חודשיים (פי 20) דרך אופטימיזציית פאנל, איטרציות UX וקמפיינים ממוקדים (Google Analytics, LogRocket).',
-            'בניתי מסגרת KPI ודאשבורד הנהלה מוכן‑לאקזיט — צמיחה, Activation, Retention, המרת מודעות — ב‑Looker Studio וב‑HubSpot.',
-            'מיפיתי את כל הפאנל; תיקנתי 3 נקודות נשירה קריטיות ושיפרתי את ה‑Activation ב‑32%.',
+            'ניהלתי את ה‑Roadmap והספרינטים ב‑Jira, ויישרתי קו בין פיתוח, עיצוב ושיווק סביב אבני דרך ברורות של Delivery.',
+            'בניתי מסגרת KPI ודאשבורד הנהלה — צמיחה, Activation, Retention, המרה — ב‑Looker Studio, לשקיפות מלאה מול ההנהלה.',
+            'מיפיתי את כל הפאנל מקצה לקצה; זיהיתי 3 נקודות נשירה קריטיות והובלתי תיקונים ששיפרו את ה‑Activation ב‑32%.',
+            'הגדלתי את תנועת הפלטפורמה מ‑100 ל‑2,000 משתמשים חודשיים (פי 20) דרך איטרציה מבוססת‑דאטה (Google Analytics, LogRocket).',
             'הכנתי את מצגת התובנות מבוססת‑הדאטה שתמכה ב‑Due Diligence וברכישה.',
-            'ניהלתי Roadmap וספרינטים ב‑Jira, ויישרתי קו בין פיתוח, עיצוב ושיווק.',
           ],
-          tags: ['אסטרטגיית מוצר', 'צמיחה', 'Looker Studio', 'HubSpot', 'Jira'],
+          tags: ['Roadmap', 'Jira', 'KPIs', 'Looker Studio', 'דיווח'],
         },
         {
           id: 'talia',
           period: '2024 — 2025',
           company: 'Talia Chriqui Consulting',
           acquired: '',
-          role: 'Marketing & Operations Program Manager',
+          role: 'מנהלת תפעול ותוכניות',
           summary:
-            'חברת ייעוץ בוטיק לטרנספורמציה שיווקית ותפעולית לעסקים קטנים. בניתי תשתית Go‑to‑Market מאפס.',
+            'חברת ייעוץ בוטיק לטרנספורמציה תפעולית לעסקים קטנים. ניהלתי תוכניות Delivery מקצה לקצה — מ‑Scoping ועד אימוץ.',
           bullets: [
-            'בניתי מחדש פאנלים שיווקיים ומכירתיים ל‑8+ עסקים; שיפרתי את המרת ליד‑ללקוח ב‑35% בממוצע (HubSpot, Google Analytics).',
-            'עיצבתי דאשבורדים בזמן אמת ב‑Looker Studio — והעברתי לקוחות מקבלת החלטות אינטואיטיבית לקבלת החלטות מבוססת‑דאטה.',
-            'אוטומציה של תהליכים תפעוליים ב‑Monday.com ו‑Zapier — חיסכון של 7 שעות בשבוע בממוצע ללקוח.',
-            'בניתי פרופילי ICP ומסעות לקוח, ותרגמתי תובנות למיצוב GTM.',
-            'הובלתי ניהול שינוי ויישור מחזיקי עניין — אימוץ מלא תוך 3–4 שבועות, ללא סמכות ישירה.',
+            'ניהלתי תוכניות Delivery ל‑8+ עסקים — Scoping, אבני דרך ויישור מחזיקי עניין מ‑Kickoff ועד אימוץ.',
+            'עיצבתי דאשבורדים בזמן אמת ב‑Looker Studio, והעברתי צוותים מקבלת החלטות אינטואיטיבית למבוססת‑דאטה.',
+            'ייעלתי תהליכים תפעוליים — חיסכון של 7 שעות בשבוע בממוצע ללקוח.',
+            'הובלתי ניהול שינוי בכל הטמעה — אימוץ מלא תוך 3–4 שבועות, ללא סמכות ישירה.',
+            'בניתי מחדש ובקרתי כל שלב בפאנל — שיפור המרת ליד‑ללקוח ב‑35% בממוצע.',
           ],
-          tags: ['תפעול שיווק', 'GTM', 'אוטומציה', 'Monday.com', 'Zapier'],
+          tags: ['ניהול תוכניות', 'מחזיקי עניין', 'תהליכים', 'דאשבורדים', 'ניהול שינוי'],
         },
         {
           id: 'hitech',
@@ -302,7 +302,7 @@ export const translations = {
             'עמדתי ביעדי ליד חודשיים דרך קמפיינים מותאמים אישית.',
             'תרגמתי מוצרי ביטוח מורכבים להצעות ערך ברורות לקהל טכנולוגי.',
           ],
-          tags: ['פיתוח עסקי', 'CRM', 'יצירת לידים'],
+          tags: ['מעקב Pipeline', 'CRM', 'תיאום'],
         },
         {
           id: 'kantar',
@@ -316,7 +316,7 @@ export const translations = {
             'ניהול צוות, מעקב אחר התקדמות והגדרת יעדים.',
             'ניתוח דאטה ותרגום ממצאים לתובנות מעשיות.',
           ],
-          tags: ['מחקר שוק', 'תובנות צרכן', 'ניתוח נתונים'],
+          tags: ['תיאום פרויקטים', 'ניתוח נתונים', 'דיווח'],
         },
         {
           id: 'idf',
@@ -331,7 +331,7 @@ export const translations = {
             'בניתי תוכנת VBA לייעול תהליך גיוס משאבי האנוש.',
             'הצגתי דוחות התקדמות חודשיים לפיקוד בכיר.',
           ],
-          tags: ['תפעול', 'ניהול אנשים', 'Excel / VBA'],
+          tags: ['תפעול', 'Excel / VBA', 'דיווח'],
         },
       ],
     },
@@ -341,20 +341,20 @@ export const translations = {
       title: 'כלים ותחומים שאני עובדת בהם',
       groups: [
         {
-          name: 'מוצר וצמיחה',
-          items: ['אסטרטגיית GTM', 'אסטרטגיית מוצר', 'אופטימיזציית פאנל', 'איטרציית A/B', 'Roadmapping'],
+          name: 'ניהול ובקרת פרויקטים',
+          items: ['Roadmapping', 'ניהול ספרינטים', 'מעקב אבני דרך וסיכונים', 'יישור מחזיקי עניין', 'ניהול שינוי'],
         },
         {
-          name: 'תפעול שיווק',
-          items: ['HubSpot', 'אוטומציית שיווק', 'Lifecycle ו‑CRM', 'ICP ומיצוב'],
+          name: 'דיווח ואנליטיקה',
+          items: ['Excel (מתקדם)', 'דאשבורדי KPI', 'Looker Studio', 'Google Analytics', 'ניתוח נתונים'],
         },
         {
-          name: 'אנליטיקה ודאטה',
-          items: ['Google Analytics', 'Mixpanel', 'Looker Studio', 'LogRocket', 'Excel / VBA'],
+          name: 'כלים',
+          items: ['Jira', 'Monday.com', 'Microsoft Office', 'LogRocket'],
         },
         {
-          name: 'תהליך ו‑Delivery',
-          items: ['Jira', 'Monday.com', 'Zapier', 'ניהול ספרינטים'],
+          name: 'בסיס',
+          items: ['הנדסת תעשייה וניהול', 'ייעול תהליכים', 'תפעול', 'VBA'],
         },
       ],
     },
@@ -378,9 +378,9 @@ export const translations = {
 
     contact: {
       label: 'בואו נבנה משהו',
-      title: 'מחפשים מישהי שגורמת לשיווק פשוט לעבוד?',
+      title: 'מחפשים PMO שישמור על הפרויקטים במסלול?',
       body:
-        'אני פתוחה לתפקידים בניהול פרויקטים, תפעול שיווק ומכירות ושיווק בהייטק הישראלי. הדרך המהירה ביותר להגיע אליי — למטה.',
+        'אני פתוחה לתפקידי PMO, ניהול ובקרת פרויקטים בהייטק הישראלי. בסיס של הנדסת תעשייה וניהול, מבוססת‑דאטה, מדויקת — ואוהבת את העבודה הקשה והמעשית. הדרך המהירה ביותר להגיע אליי — למטה.',
       emailCta: 'שלחו מייל',
       linkedinCta: 'LinkedIn',
       resumeCta: 'הורדת קורות חיים',
