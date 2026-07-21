@@ -434,8 +434,8 @@ html[dir='rtl'] .scroll-progress {
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
-  -webkit-mask-image: linear-gradient(to bottom, #000 74%, transparent 98%);
-  mask-image: linear-gradient(to bottom, #000 74%, transparent 98%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 85%, transparent 100%);
 }
 .hero-photo-glow {
   position: absolute;

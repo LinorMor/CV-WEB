@@ -126,7 +126,7 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
         >
           <div className="hero-photo-glow" aria-hidden="true" />
-          <img src={profile.photoCutout} alt="Linor Mor" width="900" height="1695" loading="eager" />
+          <img src={profile.photoCutout} alt="Linor Mor" width="760" height="897" loading="eager" />
         </motion.div>
       </div>
 
